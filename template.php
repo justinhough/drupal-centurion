@@ -79,6 +79,28 @@ function centurion_preprocess_page(&$vars, $hook) {
 
 }
 
+
+/**
+ * Override or insert variables into the page template for HTML output.
+ */
+function centurion_process_html(&$variables) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_html_alter($variables);
+  }
+}
+
+/**
+ * Override or insert variables into the page template.
+ */
+function centurion_process_page(&$variables) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($variables);
+  }
+}
+
+
 /**
  * Borrowed from NineSixty Theme built by dvessel
  * http://drupal.org/user/56782
@@ -88,7 +110,7 @@ function centurion_preprocess_page(&$vars, $hook) {
  * available within a template file and the integer is the width set for the
  * adjacent box containing that variable.
  *
- * class="<?php print ns('grid-12', $var_a, 6); ?>"
+ * class="<?php print ns('grid-100', $var_a, 50); ?>"
  *
  * If $var_a contains data, the next parameter (integer) will be subtracted from
  * the default class.
