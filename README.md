@@ -1,10 +1,10 @@
 Drupal Centurion
 ====================
-Version 3.0
+Version 3.6.3
 
 Centurion is a Drupal starter theme built on Centurion and designed to help template new sites quickly. It was initially designed to allow a website to auto-size to the browser. Using CSS3 media queries Centurion can auto-size from a 960px width for a desktop down to 320px for a mobile device. It was built to be a framework, and allows for customization outside of the layout.
 
-The basic Centurion Framework is available for download on Github (https://github.com/jhough10/Centurion)
+The basic Centurion Framework is available for download on Github (https://github.com/justinhough/Centurion)
 
 ## Requirements
 - Drupal 7.x.
